@@ -53,4 +53,12 @@ const Account = () => {
       <label>Select an action below to continue</label>
       <select onChange={handleSelectChange} value={selectedOption} name="mode" id="mode-select">
         <option value="">Select Option</option>
-        <option value="
+        <option value="Deposit">Deposit</option>
+        <option value="Cash Back">Cash Back</option>
+      </select>
+      {selectedOption && <ATMDeposit onChange={handleChange} isDeposit={isDeposit}></ATMDeposit>}
+    </form>
+  );
+};
+// ========================================
+ReactDOM.render(<Account />, document.getElementById("root"));
