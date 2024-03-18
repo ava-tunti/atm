@@ -1,86 +1,77 @@
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>ATM Machine</title>
-  <!-- Don't use this in production: -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <!-- ----------------- Bootstrap header START ----------------- -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <style>
     body {
-      background-color: #ffffff; /* White background for clean look */
-      color: #424242; /* Dark gray text color for readability */
+      background-color: #ffffff;
+      color: #424242;
       display: flex;
-      justify-content: center; /* Center content horizontally */
-      align-items: center; /* Center content vertically */
-      height: 100vh; /* Full viewport height */
-      margin: 0; /* Remove default body margin */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-
-    .container {
-      max-width: 400px;
+    .title-box {
+      background-color: #f0f0f0;
       padding: 20px;
-      background-color: #ffffff; /* White container background */
-      border-radius: 10px; /* Rounded corners for modern appearance */
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
+    .action-box {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .row {
+      margin: 0 auto;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
     h1 {
-      color: #f44336; /* Subtle red color for heading */
-      text-align: center; /* Center heading */
-      margin-bottom: 20px; /* Add some space below the heading */
+      color: #f44336;
+      text-align: center;
+      margin-bottom: 20px;
     }
-
-    button {
-      background-color: #f44336; /* Vivid red button background */
-      border: none; /* Remove button border */
-      color: #ffffff; /* White text color for contrast */
-      width: 100%; /* Button width to fill container */
-      padding: 10px; /* Add padding for comfortable button size */
-      margin-top: 20px; /* Add space between buttons */
-      border-radius: 5px; /* Rounded corners for modern look */
-      cursor: pointer; /* Add pointer cursor for interactive elements */
+    button, input[type="submit"] {
+      background-color: #f44336;
+      border: none;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
     }
-
-    button:hover {
-      background-color: #e57373; /* Slightly darker red on hover */
+    button:hover, input[type="submit"]:hover {
+      background-color: #e57373;
     }
-
     .form-control {
-      border: 2px solid #f44336; /* Red border for input fields */
-      border-radius: 5px; /* Rounded corners for modern look */
-      padding: 10px; /* Add padding for comfortable input size */
-      margin-bottom: 20px; /* Add space below input fields */
-    }
-
-    input[type="submit"] {
-      background-color: #f44336; /* Red submit button background */
-      border: none; /* Remove button border */
-      color: #ffffff; /* White text color for contrast */
-      width: 100%; /* Button width to fill container */
-      padding: 10px; /* Add padding for comfortable button size */
-      border-radius: 5px; /* Rounded corners for modern look */
-      cursor: pointer; /* Add pointer cursor for interactive elements */
-    }
-
-    input[type="submit"]:hover {
-      background-color: #e57373; /* Slightly darker red on hover */
+      border: 2px solid #f44336;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
-
 <body>
-  <h1 style="font-family: Arial">ATM Machine</h1>
-  <!-- We will put our React component inside this div. -->
-  <div id="root"></div>
-  <!-- Load React. -->
+  <div class="row">
+    <div class="col-md-6 title-box">
+      <h1 style="font-family: Arial">ATM Machine</h1>
+    </div>
+    <div class="col-md-6 action-box">
+      <div id="root"></div>
+    </div>
+  </div>
   <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
-  <!-- Load our React component. -->
-
   <script src="solutionStage3.jsx" defer type="text/babel"></script>
 </body>
-
 </html>
