@@ -10,40 +10,63 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <style>
     body {
-      background-color: #ffebee; /* A very light red background */
-      color: #37474f; /* Subdued text color for contrast */
-    }
-    
-    h1 {
-      color: #d32f2f; /* A stronger red for headings */
-      text-align: center;
-      margin-bottom: 2rem;
+      background-color: #ffffff; /* White background for clean look */
+      color: #424242; /* Dark gray text color for readability */
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      height: 100vh; /* Full viewport height */
+      margin: 0; /* Remove default body margin */
     }
 
     .container {
       max-width: 400px;
-      margin: 20px auto;
       padding: 20px;
-      background-color: #ffffff; /* Keeping the container white for contrast */
-      border: 2px solid #ef9a9a; /* Subtle red border */
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+      background-color: #ffffff; /* White container background */
+      border-radius: 10px; /* Rounded corners for modern appearance */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    }
+
+    h1 {
+      color: #f44336; /* Subtle red color for heading */
+      text-align: center; /* Center heading */
+      margin-bottom: 20px; /* Add some space below the heading */
     }
 
     button {
-      background-color: #f44336; /* A solid red for buttons */
-      border-color: #f44336; /* Matching border color */
-      color: #ffffff; /* White text color for readability */
-      margin-top: 10px; /* Add some space above the button */
+      background-color: #f44336; /* Vivid red button background */
+      border: none; /* Remove button border */
+      color: #ffffff; /* White text color for contrast */
+      width: 100%; /* Button width to fill container */
+      padding: 10px; /* Add padding for comfortable button size */
+      margin-top: 20px; /* Add space between buttons */
+      border-radius: 5px; /* Rounded corners for modern look */
+      cursor: pointer; /* Add pointer cursor for interactive elements */
     }
 
     button:hover {
-      background-color: #d32f2f; /* Darker red on hover for interaction feedback */
-      border-color: #d32f2f;
+      background-color: #e57373; /* Slightly darker red on hover */
     }
 
     .form-control {
-      border: 2px solid #ef9a9a; /* Red border for inputs */
+      border: 2px solid #f44336; /* Red border for input fields */
+      border-radius: 5px; /* Rounded corners for modern look */
+      padding: 10px; /* Add padding for comfortable input size */
+      margin-bottom: 20px; /* Add space below input fields */
+    }
+
+    input[type="submit"] {
+      background-color: #f44336; /* Red submit button background */
+      border: none; /* Remove button border */
+      color: #ffffff; /* White text color for contrast */
+      width: 100%; /* Button width to fill container */
+      padding: 10px; /* Add padding for comfortable button size */
+      border-radius: 5px; /* Rounded corners for modern look */
+      cursor: pointer; /* Add pointer cursor for interactive elements */
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e57373; /* Slightly darker red on hover */
     }
   </style>
 </head>
